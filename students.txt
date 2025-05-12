@@ -1,0 +1,4 @@
+# Example 2: Reading a TXT File (Tab-Delimited)
+Name	Age	Grade
+Alice	14	A
+Bob	15	B
