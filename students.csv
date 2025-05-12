@@ -1,26 +1,7 @@
-import csv
-
-# CSV 데이터를 읽어들입니다.
-csv_data = """Name,Age,Grade
+# Example 1. CSV file
+Name,Age,Grade
 Alice,14,A
 Bob,15,B
 Cindy,13,A
 David,14,C
-Ella,15,B"""
-
-# CSV 데이터를 줄 단위로 나눕니다.
-lines = csv_data.strip().split("\n")
-
-# CSV 데이터를 Markdown 표 형식으로 변환합니다.
-markdown_lines = []
-reader = csv.reader(lines)
-header = next(reader)
-markdown_lines.append("| " + " | ".join(header) + " |")
-markdown_lines.append("|" + "-----|" * len(header))
-
-for row in reader:
-    markdown_lines.append("| " + " | ".join(row) + " |")
-
-# 변환된 Markdown 표를 출력합니다.
-markdown_table = "\n".join(markdown_lines)
-print(markdown_table)
+Ella,15,B
